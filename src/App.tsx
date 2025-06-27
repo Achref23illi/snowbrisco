@@ -16,7 +16,6 @@ function App() {
     description: t('hero.description'),
     features: [
       t('hero.features.loveGuaranteed'),
-      t('hero.features.championBloodlines'),
       t('hero.features.fullyProtected'),
       t('hero.features.superPlayful')
     ],

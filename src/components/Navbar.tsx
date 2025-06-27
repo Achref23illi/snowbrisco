@@ -34,7 +34,7 @@ const Navbar = () => {
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-200/50' 
+          ? 'bg-gradient-to-r from-[#F8F4EC]/95 via-[#FCFAF6]/95 to-[#F8F4EC]/95 backdrop-blur-md shadow-xl border-b-2 border-[#FFA985]/20' 
           : 'bg-transparent'
       }`}
       initial={{ y: -100 }}
@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className="flex flex-col">
               <span 
                 className={`text-lg font-bold transition-colors duration-300 ${
-                  isScrolled ? 'text-slate-900' : 'text-white'
+                  isScrolled ? 'text-[#434343]' : 'text-white'
                 }`}
                 style={{ fontFamily: fonts.display }}
               >
@@ -67,7 +67,7 @@ const Navbar = () => {
               </span>
               <span 
                 className={`text-xs font-medium transition-colors duration-300 ${
-                  isScrolled ? 'text-slate-600' : 'text-white/80'
+                  isScrolled ? 'text-[#8B8B8B]' : 'text-white/80'
                 }`}
                 style={{ fontFamily: fonts.sans }}
               >
@@ -84,7 +84,7 @@ const Navbar = () => {
                 href={item.href}
                 className={`font-medium transition-all duration-300 hover:scale-105 ${
                   isScrolled 
-                    ? 'text-slate-700 hover:text-blue-600' 
+                    ? 'text-[#434343] hover:text-[#FFA985]' 
                     : 'text-white hover:text-blue-200'
                 }`}
                 style={{ fontFamily: fonts.sans }}
@@ -109,9 +109,9 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Button 
-                className={`transition-all duration-300 font-medium px-6 py-2 ${
+                className={`transition-all duration-300 font-medium px-6 py-2 shadow-lg ${
                   isScrolled
-                    ? 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-[#FFA985] to-[#FF9AC1] hover:from-[#FF9470] hover:to-[#FF85B3] text-white shadow-[#FFA985]/30'
                     : 'bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-slate-900'
                 }`}
                 style={{ fontFamily: fonts.sans }}
@@ -131,17 +131,17 @@ const Navbar = () => {
                   variant="ghost"
                   size="sm"
                   className={`transition-colors duration-300 ${
-                    isScrolled ? 'text-slate-900 hover:bg-slate-100' : 'text-white hover:bg-white/10'
+                    isScrolled ? 'text-[#434343] hover:bg-[#FFA985]/10' : 'text-white hover:bg-white/10'
                   }`}
                 >
                   <Menu className="w-6 h-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80 bg-white">
+              <SheetContent side="right" className="w-80 bg-gradient-to-br from-[#F8F4EC] to-[#FCFAF6] border-l-2 border-[#FFA985]/20">
                 <div className="flex flex-col h-full">
                   {/* Mobile Logo */}
-                  <div className="flex items-center space-x-3 pb-8 border-b border-slate-200">
-                    <div className="w-12 h-12 rounded-full overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
+                  <div className="flex items-center space-x-3 pb-8 border-b border-[#FFA985]/20">
+                    <div className="w-12 h-12 rounded-full overflow-hidden bg-white/50 border-2 border-[#FFA985]/30 flex items-center justify-center shadow-lg">
                       <img 
                         src="/logo.png" 
                         alt="SnowBrisco Premium Cattery Logo"
@@ -150,13 +150,13 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-col">
                       <span 
-                        className="text-lg font-bold text-slate-900"
+                        className="text-lg font-bold text-[#434343]"
                         style={{ fontFamily: fonts.display }}
                       >
                         {t('navbar.brand')}
                       </span>
                       <span 
-                        className="text-xs text-slate-600 font-medium"
+                        className="text-xs text-[#8B8B8B] font-medium"
                         style={{ fontFamily: fonts.sans }}
                       >
                         {t('navbar.tagline')}
@@ -170,7 +170,7 @@ const Navbar = () => {
                       <motion.a
                         key={item.name}
                         href={item.href}
-                        className="text-slate-700 hover:text-blue-600 font-medium text-lg transition-colors duration-200"
+                        className="text-[#434343] hover:text-[#FFA985] font-medium text-lg transition-colors duration-200"
                         style={{ fontFamily: fonts.sans }}
                         onClick={() => setIsMobileMenuOpen(false)}
                         initial={{ opacity: 0, x: 20 }}
@@ -184,9 +184,9 @@ const Navbar = () => {
                   </div>
 
                   {/* Mobile CTA */}
-                  <div className="pt-6 border-t border-slate-200">
+                  <div className="pt-6 border-t border-[#FFA985]/20">
                     <Button 
-                      className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3"
+                      className="w-full bg-gradient-to-r from-[#FFA985] to-[#FF9AC1] hover:from-[#FF9470] hover:to-[#FF85B3] text-white font-medium py-3 shadow-lg shadow-[#FFA985]/30"
                       style={{ fontFamily: fonts.sans }}
                       onClick={() => {
                         setIsMobileMenuOpen(false);

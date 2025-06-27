@@ -66,7 +66,7 @@ const LanguageToggle = ({ isScrolled = false }: LanguageToggleProps) => {
                 <span className="text-lg">{language.flag}</span>
                 <span className="text-sm font-medium">{language.name}</span>
                 {i18n.language === language.code && (
-                  <span className="ml-auto text-blue-600">✓</span>
+                  <span className="ml-auto text-blue-600">•</span>
                 )}
               </button>
             ))}

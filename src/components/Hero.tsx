@@ -172,7 +172,7 @@ const Hero = ({
                   transition={{ duration: 0.4, delay: 0.5 + index * 0.05 }}
                   whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
                 >
-                  ✓ {feature}
+                  • {feature}
                 </motion.div>
               ))}
             </motion.div>

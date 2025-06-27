@@ -1,140 +1,140 @@
 {
   "navbar": {
     "brand": "snowbrisco",
-    "tagline": "Où l'Amour Commence 💕",
+    "tagline": "Où l'Amour Commence",
     "ourStory": "Notre Histoire",
     "availableCats": "Chats Disponibles",
     "contact": "Contact",
     "findAPet": "TROUVER UN ANIMAL"
   },
   "hero": {
-    "title": "CHATONS ADORABLES 🐱",
-    "subtitle": "Votre Compagnon Purrfait est Ici!",
-    "description": "Bienvenue chez SnowBrisco! 😻 Nous élevons des bébés Scottish Fold, Scottish Straight et British Shorthair avec beaucoup d'amour!",
+    "title": "CHATONS ADORABLES",
+    "subtitle": "Votre Compagnon Parfait est Ici!",
+    "description": "Bienvenue chez SnowBrisco! Nous élevons des bébés Scottish Fold, Scottish Straight et British Shorthair avec beaucoup d'amour!",
     "features": {
-      "loveGuaranteed": "💖 Amour Garanti",
-      "championBloodlines": "🏆 Lignées de Champions",
-      "fullyProtected": "💉 Entièrement Protégés",
-      "superPlayful": "🎾 Super Joueurs"
+      "loveGuaranteed": "Amour Garanti",
+      "championBloodlines": "Lignées de Champions",
+      "fullyProtected": "Entièrement Protégés",
+      "superPlayful": "Super Joueurs"
     },
-    "ctaText": "TROUVER MON MEILLEUR AMI POILU!",
-    "ctaDescription": "Prêt à tomber amoureux? 🏠💕"
+    "ctaText": "TROUVEZ MON MEILLEUR AMI À POILS!",
+    "ctaDescription": "Prêt à tomber amoureux?"
   },
   "about": {
-    "title": "Notre Incroyable Voyage! 🚀",
-    "subtitle": "Salut, ami des chats! 😻 Depuis 2021, nous vivons notre rêve - élever les chatons les plus adorables, câlins et aimants que vous rencontrerez jamais! Chaque jour est rempli de ronronnements, de temps de jeu et de pur bonheur!",
-    "howItStarted": "Comment Tout a Commencé! 💫",
-    "paragraph1": "Imaginez ceci: Nous sommes tombés éperdument amoureux des chats et nous nous sommes dit: \"Pourquoi ne pas partager cette joie incroyable avec le monde?\" 🌍💕 C'est ainsi que SnowBrisco est né - de l'amour pur et d'un rêve de connecter des chatons incroyables avec leurs familles parfaites!",
-    "paragraph2": "Nous sommes totalement obsédés par trois races incroyables - Scottish Fold (ces adorables oreilles pliées! 😍), Scottish Straight (élégants et joueurs!), et British Shorthair (trapus et adorables!) - chacun apportant sa propre magie spéciale à nos cœurs et nos foyers.",
-    "paragraph3": "Chacun de nos bébés à fourrure grandit entouré d'amour, de câlins, de caresses du ventre et de toute l'attention qu'ils méritent! Ce ne sont pas que des chats pour nous - ce sont des membres de la famille qui se préparent à compléter VOTRE famille! 👨‍👩‍👧‍👦✨",
-    "whatMakesUsSpecial": "Ce Qui Nous Rend Spéciaux! 🌟",
+    "title": "Notre Incroyable Voyage!",
+    "subtitle": "Salut, ami des chats! Depuis 2021, nous vivons notre rêve - élever les chatons les plus adorables, câlins et aimants que vous rencontrerez jamais! Chaque jour est rempli de ronronnements, de temps de jeu et de pur bonheur!",
+    "howItStarted": "Comment Tout a Commencé!",
+    "paragraph1": "Imaginez ceci: Nous sommes tombés éperdument amoureux des chats et avons pensé, \"Pourquoi ne pas partager cette joie incroyable avec le monde?\" C'est ainsi que SnowBrisco est né - de l'amour pur et d'un rêve de connecter des chatons incroyables avec leurs familles parfaites!",
+    "paragraph2": "Nous sommes totalement obsédés par trois races incroyables - Scottish Fold (ces adorables oreilles pliées!), Scottish Straight (élégants et joueurs!), et British Shorthair (trapus et adorables!) - chacun apportant sa propre magie spéciale à nos cœurs et nos foyers.",
+    "paragraph3": "Chacun de nos bébés à fourrure grandit entouré d'amour, de câlins, de caresses du ventre et de toute l'attention qu'ils méritent! Ils ne sont pas seulement des chats pour nous - ils sont des membres de la famille qui se préparent à compléter VOTRE famille!",
+    "whatMakesUsSpecial": "Ce Qui Nous Rend Spéciaux!",
     "specialFeatures": {
-      "breedWithHearts": "Nous élevons avec nos cœurs - chaque chaton reçoit des tonnes d'amour et de socialisation!",
-      "topNotchHealthCare": "Soins de santé de premier ordre et tests génétiques - parce que sain = heureux!",
+      "breedWithHearts": "Nous élevons avec nos cœurs - chaque chaton reçoit beaucoup d'amour et de socialisation!",
+      "topNotchHealthCare": "Soins de santé de première classe et tests génétiques - parce que sain = heureux!",
       "playTime": "Temps de jeu, temps de câlins et socialisation dès le premier jour!",
       "foreverSupport": "Nous sommes là pour vous et votre ami à fourrure - pour toujours et à jamais!"
     },
-    "simbaTitle": "Rencontrez Simba! 🦁✨",
-    "simbaDescription": "Une de nos précieuses superstars Scottish Fold! 🌟",
+    "simbaTitle": "Rencontrez Simba!",
+    "simbaDescription": "Une de nos précieuses superstars Scottish Fold!",
     "stats": {
       "yearsOfJoy": {
         "number": "3+",
         "label": "Années de Pure Joie",
-        "description": "Créant des moments magiques depuis 2021! 🎉"
+        "description": "Créant des moments magiques depuis 2021!"
       },
       "happyFamilies": {
         "number": "500+",
         "label": "Familles Heureuses",
-        "description": "Bébés à fourrure aimant la vie dans des foyers incroyables! 🏠💕"
+        "description": "Bébés à fourrure aimant la vie dans des foyers incroyables!"
       },
       "amazingBreeds": {
         "number": "3",
         "label": "Races Incroyables",
-        "description": "Scottish Fold, Scottish Straight et British Shorthair mignons! 😻"
+        "description": "Scottish Fold, Scottish Straight et British Shorthair mignons!"
       },
       "loveGuarantee": {
         "number": "100%",
         "label": "Garantie d'Amour",
-        "description": "Chaque chaton vient avec notre promesse d'amour infini! 💖"
+        "description": "Chaque chaton vient avec notre promesse d'amour infini!"
       }
     }
   },
   "catGallery": {
-    "title": "Trouvez Votre Compagnon Parfait! 😻",
-    "subtitle": "Prêt à adopter ou acheter votre nouveau membre de famille? 🏠💕 Rencontrez nos beaux chats qui cherchent leur foyer pour toujours. Chaque chaton est testé pour la santé, vacciné et élevé avec un amour infini!",
+    "title": "Trouvez Votre Compagnon Parfait!",
+    "subtitle": "Prêt à adopter ou acheter votre nouveau membre de famille? Rencontrez nos beaux chats qui cherchent leur foyer pour toujours. Chaque chaton est testé pour la santé, vacciné et élevé avec un amour infini!",
     "available": "Disponible",
     "reserved": "Réservé",
     "sold": "Vendu",
     "breed": "Race",
     "age": "Âge",
-    "gender": "Sexe",
+    "gender": "Genre",
     "color": "Couleur",
-    "viewDetails": "Voir les Détails",
+    "viewDetails": "Voir Détails",
     "contactUsToday": "Contactez-nous Aujourd'hui",
-    "interestedText": "Intéressé par l'un de nos chats? Contactez-nous pour en savoir plus ou planifier une visite.",
+    "interestedText": "Intéressé par un de nos chats? Contactez-nous pour en savoir plus ou planifier une visite.",
     "cats": {
       "simba": {
         "name": "Simba",
         "breed": "Scottish Fold",
         "description": "Magnifique Scottish Fold doré avec des oreilles parfaites et un tempérament doux.",
-        "features": ["Testé pour la santé", "Vacciné", "Avec pedigree", "Élevé à la maison"]
+        "features": ["Testé pour la santé", "Vacciné", "Pedigree", "Élevé à la maison"]
       },
       "elvis": {
         "name": "Elvis",
         "breed": "Scottish Straight",
         "description": "Beau Scottish Straight avec une coloration blue point saisissante et une personnalité douce.",
-        "features": ["Testé pour la santé", "Vacciné", "Avec pedigree", "Socialisé"]
+        "features": ["Testé pour la santé", "Vacciné", "Pedigree", "Socialisé"]
       },
       "kiara": {
         "name": "Kiara",
         "breed": "Scottish Fold",
-        "description": "Magnifique Scottish Fold silver tabby avec des oreilles parfaitement pliées et une nature aimante.",
+        "description": "Superbe Scottish Fold tabby argent avec des oreilles pliées parfaites et une nature aimante.",
         "features": ["Lignée de champion", "Testé pour la santé", "Vacciné", "Enregistré"]
       },
       "eva": {
         "name": "Eva",
         "breed": "British Shorthair",
-        "description": "Adorable British Shorthair bleu avec des traits ronds classiques et une nature douce.",
-        "features": ["Testé pour la santé", "Vacciné", "Socialisé précocement", "Entraîné à la litière"]
+        "description": "Adorable British Shorthair bleu avec des caractéristiques rondes classiques et une nature douce.",
+        "features": ["Testé pour la santé", "Vacciné", "Socialisé tôt", "Dressé à la litière"]
       },
       "hanna": {
         "name": "Hanna",
         "breed": "Scottish Fold",
-        "description": "Magnifique Scottish Fold crème avec des oreilles parfaitement pliées et une personnalité douce.",
-        "features": ["Qualité d'exposition", "Testé pour la santé", "Vacciné", "Avec pedigree"]
+        "description": "Belle Scottish Fold crème avec des oreilles pliées parfaites et une personnalité douce.",
+        "features": ["Qualité d'exposition", "Testé pour la santé", "Vacciné", "Pedigree"]
       }
     }
   },
   "contact": {
     "title": "Entrer en Contact",
-    "subtitle": "Prêt à accueillir un nouveau membre de famille à fourrure? Nous aimerions avoir de vos nouvelles! Contactez-nous pour en savoir plus sur nos chats disponibles ou planifier une visite.",
+    "subtitle": "Prêt à accueillir un nouveau membre de famille à fourrure? Nous aimerions vous entendre! Contactez-nous pour en savoir plus sur nos chats disponibles ou planifier une visite.",
     "sendMessage": "Envoyez-nous un Message",
     "yourName": "Votre Nom",
-    "emailAddress": "Adresse E-mail",
+    "emailAddress": "Adresse Email",
     "phoneNumber": "Numéro de Téléphone",
-    "interestedCat": "Chat d'Intérêt",
+    "interestedCat": "Chat Qui Vous Intéresse",
     "yourMessage": "Votre Message",
-    "selectACat": "Sélectionner un chat",
+    "selectACat": "Sélectionnez un chat",
     "generalInquiry": "Demande Générale",
     "sendMessageButton": "Envoyer le Message",
     "sending": "Envoi en cours...",
     "enterYourName": "Entrez votre nom",
-    "enterYourEmail": "Entrez votre e-mail",
+    "enterYourEmail": "Entrez votre email",
     "enterYourPhone": "Entrez votre téléphone",
     "messagePlaceholder": "Parlez-nous de vous, de votre situation de vie et de toutes les questions que vous avez...",
     "contactInfo": {
       "phone": {
         "title": "Téléphone",
         "number": "(438) 342-4290",
-        "subtitle": "Appels ou Textos Bienvenus"
+        "subtitle": "Appels ou SMS Bienvenus"
       },
       "email": {
-        "title": "E-mail",
+        "title": "Email",
         "address": "info@snowbrisco.com",
         "subtitle": "Réponse Rapide Garantie"
       },
       "location": {
-        "title": "Emplacement",
+        "title": "Localisation",
         "address": "Ontario, Canada",
         "subtitle": "Visites sur Rendez-vous"
       },
@@ -151,7 +151,7 @@
     "callNow": "Appelez Maintenant"
   },
   "footer": {
-    "companyDescription": "Depuis 2021, nous sommes les fiers parents de chats derrière SnowBrisco, où chaque chaton est élevé avec des câlins et de l'amour infinis! 🐱 Nos bébés Scottish Fold, Scottish Straight et British Shorthair ont hâte de rencontrer leurs familles pour toujours et d'apporter de la joie à votre monde!",
+    "companyDescription": "Depuis 2021, nous sommes les fiers parents de chats derrière SnowBrisco, où chaque chaton est élevé avec des câlins et de l'amour infinis! Nos bébés Scottish Fold, Scottish Straight et British Shorthair ont hâte de rencontrer leurs familles pour toujours et d'apporter de la joie à votre monde!",
     "services": {
       "healthPromise": "Promesse de Santé",
       "championParents": "Parents Champions",
@@ -162,31 +162,31 @@
       "title": "Connectons-nous!",
       "ourStory": "Notre Histoire",
       "meetOurBabies": "Rencontrez Nos Bébés",
-      "chatWithUs": "Discutez avec Nous",
+      "chatWithUs": "Discutez Avec Nous",
       "comeVisit": "Venez Nous Rendre Visite!"
     },
     "catBreeds": {
       "title": "Nos Races Adorables",
-      "scottishFoldCuties": "Mignons Scottish Fold",
-      "scottishStraightSweeties": "Doux Scottish Straight",
+      "scottishFoldCuties": "Mignonnes Scottish Fold",
+      "scottishStraightSweeties": "Douces Scottish Straight",
       "britishShorthairBeauties": "Beautés British Shorthair",
       "allOurBabies": "Tous Nos Bébés"
     },
     "contactSection": {
-      "title": "Discutons! 💬",
-      "phoneSubtitle": "Appelez ou textez-nous à tout moment! 📱",
-      "emailSubtitle": "Nous répondons super vite! ⚡",
+      "title": "Discutons!",
+      "phoneSubtitle": "Appelez ou envoyez un SMS à tout moment!",
+      "emailSubtitle": "Nous répondons super vite!",
       "locationSubtitle": "Venez rencontrer nos bébés!",
-      "socialTitle": "Suivez Nos Aventures! 📸"
+      "socialTitle": "Suivez Nos Aventures!"
     },
-    "copyright": "Créant des moments magiques, une patte à la fois 🐾✨",
+    "copyright": "Créant des moments magiques, une patte à la fois",
     "links": {
       "privacyStuff": "Trucs de Confidentialité",
       "termsAndLove": "Conditions et Amour",
       "kittyCare": "Conseils de Soins pour Chatons"
     },
     "madeWith": "Fait avec",
-    "catHair": "et beaucoup de poils de chat! 😸"
+    "catHair": "et beaucoup de poils de chat!"
   },
   "common": {
     "required": "*",

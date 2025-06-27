@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card } from '@/components/ui/card';
 import { colors } from '@/config/colors';
+import { fonts } from '@/config/fonts';
 
 const AboutUs = () => {
   const sectionRef = useRef(null);
@@ -49,198 +50,183 @@ const AboutUs = () => {
     }
   ];
 
+  // Fun paw print decoration component
+  const PawPrint = ({ className = "", size = "w-6 h-6" }) => (
+    <div className={`${size} ${className} opacity-20`} style={{ color: colors.primary }}>
+      •
+    </div>
+  );
+
   return (
     <section 
       ref={sectionRef}
-      className="py-12 sm:py-16 md:py-20"
-      style={{ backgroundColor: colors.backgroundLight }}
+      className="py-16 sm:py-20 md:py-24 relative overflow-hidden"
+      style={{ backgroundColor: colors.background }}
       id="about"
     >
-      <div className="container mx-auto px-4 sm:px-6">
+      {/* Floating decorative elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <PawPrint className="absolute top-20 left-10 opacity-10 animate-bounce" size="w-8 h-8" />
+        <PawPrint className="absolute top-40 right-20 opacity-10 animate-pulse" size="w-6 h-6" />
+        <PawPrint className="absolute bottom-32 left-1/4 opacity-10 animate-bounce" size="w-7 h-7" />
+        <PawPrint className="absolute bottom-20 right-1/3 opacity-10 animate-pulse" size="w-5 h-5" />
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           className="max-w-6xl mx-auto"
         >
-          {/* Section Header */}
+          {/* Section Header with playful design */}
           <motion.div 
             variants={fadeInUp}
-            className="text-center mb-12 sm:mb-16"
+            className="text-center mb-16 sm:mb-20"
           >
-            <motion.h2 
-              className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 px-2"
-              style={{ 
-                fontFamily: 'Montserrat, sans-serif',
-                color: colors.text
-              }}
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-accent animate-pulse" style={{ backgroundColor: colors.primary }}></div>
+              <motion.h2 
+                className="text-4xl sm:text-5xl md:text-6xl font-bold px-2"
+                style={{ 
+                  fontFamily: fonts.display,
+                  color: colors.text,
+                  textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
+                }}
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                {t('about.title')}
+              </motion.h2>
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-accent animate-pulse" style={{ backgroundColor: colors.primary }}></div>
+            </div>
+            <motion.div
+              className="relative max-w-4xl mx-auto"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 200 }}
             >
-              {t('about.title')}
-            </motion.h2>
-            <motion.p 
-              className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed px-2"
-              style={{ 
-                fontFamily: 'Inter, sans-serif',
-                color: colors.muted
-              }}
-            >
-              {t('about.subtitle')}
-            </motion.p>
+              <div 
+                className="bg-gradient-to-r from-white/80 to-white/60 backdrop-blur-sm rounded-3xl p-6 sm:p-8 border-2 border-dashed shadow-lg"
+                style={{ borderColor: colors.primary }}
+              >
+                <p 
+                  className="text-lg sm:text-xl leading-relaxed"
+                  style={{ 
+                    fontFamily: fonts.body,
+                    color: colors.text
+                  }}
+                >
+                  {t('about.subtitle')}
+                </p>
+              </div>
+            </motion.div>
           </motion.div>
 
-          {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 md:mb-20">
-            {/* Left Content */}
-            <motion.div variants={fadeInUp} className="space-y-6 sm:space-y-8 order-2 lg:order-1">
-              <div>
-                <h3 
-                  className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6"
+          {/* Main Content with cozy layout */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-16 sm:mb-20">
+            
+            {/* Right Content - Simba Image (moved first for mobile) */}
+            <motion.div variants={fadeInUp} className="order-1 lg:order-2">
+              <div className="relative">
+                {/* Decorative elements around the image */}
+                <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-pink-300 to-pink-400 rounded-full opacity-70 animate-pulse"></div>
+                <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-full opacity-70 animate-bounce"></div>
+                
+                <Card 
+                  className="p-6 sm:p-8 transform hover:rotate-1 transition-all duration-300 hover:shadow-2xl relative overflow-hidden"
                   style={{ 
-                    fontFamily: 'Montserrat, sans-serif',
-                    color: colors.text
+                    background: `linear-gradient(135deg, ${colors.white} 0%, ${colors.backgroundLight} 100%)`,
+                    border: `3px solid ${colors.primary}40`
                   }}
                 >
-                  {t('about.howItStarted')}
-                </h3>
-                <div 
-                  className="space-y-3 sm:space-y-4 text-base sm:text-lg leading-relaxed"
-                  style={{ 
-                    fontFamily: 'Inter, sans-serif',
-                    color: colors.muted
-                  }}
-                >
-                  <p>
-                    {t('about.paragraph1')}
-                  </p>
-                  <p>
-                    {t('about.paragraph2')}
-                  </p>
-                  <p>
-                    {t('about.paragraph3')}
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <h4 
-                  className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4"
-                  style={{ 
-                    fontFamily: 'Montserrat, sans-serif',
-                    color: colors.text
-                  }}
-                >
-                  {t('about.whatMakesUsSpecial')}
-                </h4>
-                <ul 
-                  className="space-y-2 sm:space-y-3 text-sm sm:text-base"
-                  style={{ 
-                    fontFamily: 'Inter, sans-serif',
-                    color: colors.muted
-                  }}
-                >
-                  <li className="flex items-start">
-                    <span style={{ color: colors.accent }} className="mr-2 sm:mr-3 mt-1 text-sm sm:text-base">💖</span>
-                    <span className="leading-relaxed">{t('about.specialFeatures.breedWithHearts')}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span style={{ color: colors.accent }} className="mr-2 sm:mr-3 mt-1 text-sm sm:text-base">🏥</span>
-                    <span className="leading-relaxed">{t('about.specialFeatures.topNotchHealthCare')}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span style={{ color: colors.accent }} className="mr-2 sm:mr-3 mt-1 text-sm sm:text-base">🎾</span>
-                    <span className="leading-relaxed">{t('about.specialFeatures.playTime')}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span style={{ color: colors.accent }} className="mr-2 sm:mr-3 mt-1 text-sm sm:text-base">🤝</span>
-                    <span className="leading-relaxed">{t('about.specialFeatures.foreverSupport')}</span>
-                  </li>
-                </ul>
+                  {/* Cat ear decorations on card */}
+                  <div className="absolute -top-3 left-8 w-6 h-6 bg-gradient-to-br from-pink-400 to-pink-500 rounded-full transform rotate-45"></div>
+                  <div className="absolute -top-3 left-16 w-6 h-6 bg-gradient-to-br from-pink-400 to-pink-500 rounded-full transform rotate-45"></div>
+                  
+                  <div className="aspect-square rounded-2xl overflow-hidden relative group">
+                    <img 
+                      src="/simba.jpg" 
+                      alt="Simba - Our Adorable Scottish Fold Star"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    {/* Cute overlay effect */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-6 text-center">
+                    <h4 
+                      className="text-2xl sm:text-3xl font-bold mb-3 flex items-center justify-center gap-2"
+                      style={{ 
+                        fontFamily: fonts.display,
+                        color: colors.text
+                      }}
+                    >
+                      {t('about.simbaTitle')}
+                    </h4>
+                    <p 
+                      className="text-base sm:text-lg leading-relaxed"
+                      style={{ 
+                        fontFamily: fonts.body,
+                        color: colors.muted
+                      }}
+                    >
+                      {t('about.simbaDescription')}
+                    </p>
+                  </div>
+                </Card>
               </div>
             </motion.div>
 
-            {/* Right Content - Simba Image */}
-            <motion.div variants={fadeInUp} className="order-1 lg:order-2">
-              <Card 
-                className="p-4 sm:p-6 md:p-8 shadow-xl"
-                style={{ backgroundColor: colors.white }}
-              >
-                <div className="aspect-square rounded-lg overflow-hidden">
-                  <img 
-                    src="/simba.jpg" 
-                    alt="Simba - Our Adorable Scottish Fold Star"
-                    className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="mt-4 text-center">
-                  <h4 
-                    className="text-lg sm:text-xl font-semibold mb-2"
+            {/* Left Content with playful styling */}
+            <motion.div variants={fadeInUp} className="space-y-8 sm:space-y-10 order-2 lg:order-1">
+              <div className="relative">
+                <div 
+                  className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl p-6 sm:p-8 border-2 border-dotted shadow-lg relative overflow-hidden"
+                  style={{ borderColor: colors.accent }}
+                >
+                  {/* Heart decorations */}
+                  <div className="absolute top-4 right-4 text-2xl animate-pulse">
+                    <div className="w-6 h-6 bg-red-400 rounded-full"></div>
+                  </div>
+                  
+                  <h3 
+                    className="text-3xl sm:text-4xl font-bold mb-6 flex items-center gap-3"
                     style={{ 
-                      fontFamily: 'Montserrat, sans-serif',
+                      fontFamily: fonts.display,
                       color: colors.text
                     }}
                   >
-                    {t('about.simbaTitle')}
-                  </h4>
-                  <p 
-                    className="text-sm"
+                    <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+                    {t('about.howItStarted')}
+                  </h3>
+                  
+                  <div 
+                    className="space-y-4 sm:space-y-5 text-base sm:text-lg leading-relaxed"
                     style={{ 
-                      fontFamily: 'Inter, sans-serif',
-                      color: colors.muted
+                      fontFamily: fonts.body,
+                      color: colors.text
                     }}
                   >
-                    {t('about.simbaDescription')}
-                  </p>
+                    <p className="relative pl-6">
+                      <span className="absolute left-0 top-1 text-lg">•</span>
+                      {t('about.paragraph1')}
+                    </p>
+                    <p className="relative pl-6">
+                      <span className="absolute left-0 top-1 text-lg">•</span>
+                      {t('about.paragraph2')}
+                    </p>
+                    <p className="relative pl-6">
+                      <span className="absolute left-0 top-1 text-lg">•</span>
+                      {t('about.paragraph3')}
+                    </p>
+                  </div>
                 </div>
-              </Card>
+              </div>
             </motion.div>
           </div>
-
-          {/* Stats Section */}
-          <motion.div 
-            variants={fadeInUp}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
-          >
-            {features.map((feature, index) => (
-              <motion.div 
-                key={index}
-                variants={fadeInUp}
-                className="text-center"
-              >
-                <Card 
-                  className="p-4 sm:p-6 hover:shadow-lg transition-shadow duration-200 h-full"
-                  style={{ backgroundColor: colors.white }}
-                >
-                  <div 
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2"
-                    style={{ 
-                      fontFamily: 'Montserrat, sans-serif',
-                      color: colors.accent
-                    }}
-                  >
-                    {feature.number}
-                  </div>
-                  <h4 
-                    className="text-sm sm:text-base md:text-lg font-semibold mb-2 leading-tight"
-                    style={{ 
-                      fontFamily: 'Montserrat, sans-serif',
-                      color: colors.text
-                    }}
-                  >
-                    {feature.label}
-                  </h4>
-                  <p 
-                    className="text-xs sm:text-sm leading-relaxed"
-                    style={{ 
-                      fontFamily: 'Inter, sans-serif',
-                      color: colors.muted
-                    }}
-                  >
-                    {feature.description}
-                  </p>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>
